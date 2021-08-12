@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="player.css">
+</head>
+<body>
+    <div id="container">
+        <div id="heroPage">
+            <div id="hero-left">
+                <h2><i class="ri-disc-fill"></i></h2>
+                <div class="icons">
+                    <div class="icondiv">
+                        <i class="ri-music-fill"></i>
+
+                    </div>
+                    <div class="icondiv">
+                        <i id="download" class="ri-handbag-line"></i>
+
+                    </div>
+                    <div class="icondiv">
+                        <i class="ri-mic-fill"></i>
+
+                    </div>
+                   
+                    
+                </div>
+                <div class="contact-icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+
+                </div>
+
+            </div>
+
+            <div id="hero-right">
+                <div class="rtup">
+                    <div class="currentSong">
+                        <img src="https://images.unsplash.com/photo-1611424564067-12d778fc6c22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=965&q=80" alt="">
+                        <div class="songname">
+                            Song Name
+                        </div>
+                        <p>From your playlist</p>
+                        
+                            <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+                        
+                        <div class="btns">
+                            <i id="back" class="ri-skip-back-mini-fill"></i>
+                            <i id="playbtn" class="ri-play-fill"></i>
+                            <i id="pausebtn" class="ri-pause-fill"></i>
+                            <i id="frwrdBtn" class="ri-skip-forward-mini-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rtdwn">
+                 
+
+               
+                </div>
+            </div>
+
+           
+           
+        </div>
+        <audio data-name="Make you mine" data-singer="Melanie" src="PUBLIC - Make You Mine (Lyrics).mp3"></audio>
+        <audio data-name="Wrapme" data-singer="Some girl" src="wrap me in plastic.mp3"></audio>
+        <audio data-name="Dancing" data-singer="Some guy" src="dancing in my room.mp3"></audio>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
